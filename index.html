@@ -22,27 +22,27 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-    // Maps croc species to image URLs
-    var crocImages = {
-        "american": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Crocodylus_acutus_mexico_02-edit1.jpg",
-        "saltwater": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Crocodylus_porosus_4.jpg",
-        "freshwater": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Australia_Cairns_18.jpg"
-    };
-    
-    // When the user submits the form,
-    //   Check what species they ordered
-    //   and display an image of it
-    
-    $("#croc-form").on("submit", function(event) {
-        event.preventDefault();
-        var $crocSpecies = $(this).find("[name=species]"); // scoped
-        var crocSpecies = $crocSpecies.val();
-        var $img = $("<img>");
-        $img.width(100);
-        $img.attr("src", crocImages[crocSpecies]); 
-        $img.appendTo("body");
+        // Maps croc species to image URLs
+        var crocImages = {
+            "american": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Crocodylus_acutus_mexico_02-edit1.jpg",
+            "saltwater": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Crocodylus_porosus_4.jpg",
+            "freshwater": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Australia_Cairns_18.jpg"
+        };
         
-    });
+        // When the user submits the form,
+        //   Check what species they ordered
+        //   and display an image of it
+        
+        $("#croc-form").on("submit", function(event) {
+            event.preventDefault();
+            var $crocSpecies = $(this).find("[name=species]"); // scoped
+            var crocSpecies = $crocSpecies.val();
+            var $img = $("<img>");
+            $img.width(100);
+            $img.attr("src", crocImages[crocSpecies]); 
+            $img.appendTo("body");
+            
+        });
     </script>
     </body>
 </html>
