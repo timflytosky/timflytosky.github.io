@@ -22,3 +22,7 @@ nav a {
   padding: 16px;
   border-radius: 10px;
 }
+
+.underlin {
+  text-decoration: underlin;
+}
