@@ -47,9 +47,11 @@ a {
 }
 
 footer {
-  background-color: #24292f;
-  color: #fff;
+  background-color: rgba(102, 102, 102, 0.479);
+  color: #666;
+  margin-top: 40px;
   padding: 20px 0;
   text-align: center;
   width: 100%;
 }
+
