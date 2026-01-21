@@ -46,3 +46,10 @@ a {
   width: 50px;
 }
 
+footer {
+  background-color: #24292f;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
